@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio | Ahmad Safi'i</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top,#1e3a8a,#020617 60%);
+  color:#e5e7eb;
+  overflow-x:hidden;
+}
+
+a{text-decoration:none;color:inherit}
+
+/* ===== HEADER ===== */
+header{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
+}
+
+.profile{
+  background:rgba(15,23,42,.75);
+  backdrop-filter: blur(15px);
+  padding:45px 35px;
+  border-radius:30px;
+  text-align:center;
+  max-width:420px;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  animation:fadeUp 1.2s ease;
+}
+
+.profile img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #3b82f6;
+  box-shadow:0 0 25px rgba(59,130,246,.6);
+  margin-bottom:20px;
+}
+
+.profile h1{
+  font-size:2.3rem;
+  font-weight:700;
+}
+
+.profile p{
+  margin-top:8px;
+  font-size:1.05rem;
+  opacity:.9;
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:90px 8%;
+}
+
+h2{
+  text-align:center;
+  font-size:2.3rem;
+  margin-bottom:50px;
+  color:#93c5fd;
+}
+
+.about p{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  line-height:1.9;
+  font-size:1.05rem;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:25px;
+  max-width:900px;
+  margin:auto;
+}
+
+.skill{
+  background:linear-gradient(145deg,#020617,#020617);
+  padding:28px;
+  text-align:center;
+  border-radius:20px;
+  border:1px solid #1e293b;
+  transition:.35s;
+  font-weight:500;
+}
+
+.skill:hover{
+  transform:translateY(-8px) scale(1.03);
+  box-shadow:0 15px 40px rgba(59,130,246,.35);
+  color:#60a5fa;
+}
+
+/* ===== PROJECTS ===== */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.project{
+  background:rgba(2,6,23,.85);
+  border-radius:25px;
+  padding:35px;
+  border:1px solid #1e293b;
+  transition:.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.project::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent,#2563eb,transparent);
+  opacity:0;
+  transition:.4s;
+}
+
+.project:hover::before{
+  opacity:.15;
+}
+
+.project:hover{
+  transform:translateY(-10px);
+  box-shadow:0 25px 60px rgba(37,99,235,.45);
+}
+
+.project h3{
+  margin-bottom:12px;
+  color:#bfdbfe;
+}
+
+/* ===== CONTACT ===== */
+.contact{
+  text-align:center;
+}
+
+.contact a{
+  display:inline-block;
+  margin:12px;
+  padding:15px 34px;
+  border-radius:50px;
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  font-weight:500;
+  transition:.35s;
+}
+
+.contact a:hover{
+  transform:translateY(-5px) scale(1.05);
+  box-shadow:0 15px 35px rgba(59,130,246,.5);
+}
+
+.download{
+  background:linear-gradient(135deg,#22c55e,#16a34a)!important;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:30px;
+  text-align:center;
+  font-size:.9rem;
+  opacity:.7;
+  background:#020617;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="profile">
+    <img src="profil.jpeg" alt="Foto Profil">
+    <h1>AHMAD SAFI'I</h1>
+    <p>Siswa RPL • Web & App Developer</p>
+  </div>
+</header>
+
+<section class="about">
+  <h2>Tentang Saya</h2>
+  <p>
+    Saya adalah siswa SMK jurusan Rekayasa Perangkat Lunak (RPL) dengan minat besar
+    pada pengembangan website dan aplikasi. Terbiasa menggunakan HTML, CSS, PHP,
+    Laravel, MySQL, dan Flutter sebagai persiapan PKL serta dunia kerja IT.
+  </p>
+</section>
+
+<section>
+  <h2>Keahlian</h2>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">PHP</div>
+    <div class="skill">Laravel</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Flutter</div>
+    <div class="skill">UI / UX Design</div>
+  </div>
+</section>
+
+<section>
+  <h2>Project</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Login & Register System</h3>
+      <p>Sistem autentikasi menggunakan PHP dan MySQL dengan UI modern.</p>
+    </div>
+    <div class="project">
+      <h3>CRUD Application</h3>
+      <p>Website CRUD sederhana menggunakan PHP dan MySQL.</p>
+    </div>
+    <div class="project">
+      <h3>Flutter Login App</h3>
+      <p>Aplikasi mobile login & register dengan Flutter dan Firebase.</p>
+    </div>
+    <div class="project">
+      <h3>UI Website Design</h3>
+      <p>Desain UI/UX website bisnis menggunakan Figma.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Kontak</h2>
+  <a href="https://wa.me/6281357989660" target="_blank">WhatsApp</a>
+  <a href="mailto:ahmadsafiirpla@gmail.com">Email</a>
+  <a href="https://github.com/Safii231" target="_blank">GitHub</a><br><br>
+</section>
+
+<footer>
+  © 2026 Ahmad Safi'i • Portofolio RPL
+</footer>
+
+</body>
+</html>
